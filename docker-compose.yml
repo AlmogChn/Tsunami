@@ -1,6 +1,14 @@
 version: '3'
 services:
   web:
-    image: almogchn/Tsunami
+    build: .
     ports:
     - "5000:5000"
+  redis:
+    image: nginx:last
+    ports:
+    - "8080:80"
+  jupyter:
+    image: jupyter/base-notebook
+    ports:
+    - "8888:8888"
