@@ -3,13 +3,19 @@ pipeline {
     stages { 
         stage('git clone'){
             steps { 
-                git branch: 'main', url: 'https://github.com/AlmogChn/Tsunami.git'
+                sh 'git clone https://github.com/AlmogChn/Tsunami.git'
             }
         }
         stage('docker compose'){
             steps {
-                sh 'docker-compose up -d'
+                sh ' sudo docker  compose -f /Tsunami/docker-compose.yml up -d'
             }
-        }
+        }        
     }  
+    post {
+        always {
+            sh "sudo rm -r Tsunami"
+        }
+    }
 }
+
