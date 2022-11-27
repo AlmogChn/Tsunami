@@ -5,7 +5,7 @@ services:
     ports:
     - "5000:5000"
   redis:
-    image: nginx:last
+    image: nginx
     ports:
     - "8080:80"
   jupyter:
