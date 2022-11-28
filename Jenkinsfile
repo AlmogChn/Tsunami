@@ -11,6 +11,11 @@ pipeline {
                 sh ' sudo docker compose -f /Tsunami/docker-compose.yml up -d'
             }
         }
+        stage('vulnerable application'){ 
+            steps {
+                sh 'docker run --name unauthenticated-jupyter-notebook -p 8888:8888 -d jupyter/base-notebook start-notebook.sh --NotebookApp.token='''
+            }
+        }
         stage('Tsunami scan'){
             steps {
                 sh  'cd /home/ubuntu/tsunami && \
