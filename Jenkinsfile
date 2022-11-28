@@ -13,7 +13,7 @@ pipeline {
         }
         stage('docker compose for more applications'){ 
             steps {
-                sh ' sudo docker compose -f /Tsunami/docker-compose.yml up -d'
+                sh ' sudo docker compose up -d'
             }
         }
         stage('Tsunami update'){ 
