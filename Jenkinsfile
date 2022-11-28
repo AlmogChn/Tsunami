@@ -33,7 +33,7 @@ pipeline {
             sh 'sudo chmod 666 /var/run/docker.sock'
             sh 'sudo docker stop $(docker ps -a -q)'
             sh 'sudo docker rm $(docker ps -a -q)'
-            sh 'sudo docker rmi $(docker ps -a -q)'
+            sh 'docker rmi -f $(docker images -aq)'
         }
     }
 }
