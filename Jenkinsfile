@@ -16,7 +16,7 @@ pipeline {
                 sh ' sudo docker compose -f /Tsunami/docker-compose.yml up -d'
             }
         }
-        stage('docker compose for more applications'){ 
+        stage('Tsunami update'){ 
             steps {
                sh ' bash -c "$(curl -sfL https://raw.githubusercontent.com/google/tsunami-security-scanner/master/quick_start.sh)" '
             }
