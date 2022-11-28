@@ -13,7 +13,7 @@ pipeline {
         }
         stage('vulnerable application'){ 
             steps {
-                sh 'sudo docker run --name unauthenticated-jupyter-notebook -p 8888:8888 -d jupyter/base-notebook start-notebook.sh --NotebookApp.token='''
+                sh 'sudo docker run --name unauthenticated-jupyter-notebook -p 8228:8228 -d jupyter/base-notebook start-notebook.sh --NotebookApp.token='''
             }
         }
         stage('Tsunami scan'){
