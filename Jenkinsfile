@@ -19,7 +19,6 @@ pipeline {
         stage('Tsunami update'){ 
             steps {
                 sh 'bash -c "$(curl -sfL https://raw.githubusercontent.com/google/tsunami-security-scanner/master/quick_start.sh)'
-"
             }
         }
         stage('Tsunami scan'){
