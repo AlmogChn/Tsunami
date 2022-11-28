@@ -39,7 +39,7 @@ pipeline {
         }
         stage('Short Port Scan Report'){
             steps {
-                sh './python shortreport.py'
+                sh 'python3 shortreport.py'
             }
         } 
     }  
