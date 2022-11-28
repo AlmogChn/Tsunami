@@ -6,19 +6,14 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/AlmogChn/Tsunami.git'
             }
         }
-        stage('docker compose'){ 
-            steps {
-                sh ' sudo docker compose -f /Tsunami/docker-compose.yml up -d'
-            }
-        }
         stage('vulnerable application'){ 
             steps {
                 sh "sudo docker run --name unauthenticated-jupyter-notebook -p 8881:8888 -d jupyter/base-notebook start-notebook.sh --NotebookApp.token=''"
             }
         }
-        stage('Tsunami update'){ 
+        stage('docker compose for more applications'){ 
             steps {
-                sh ' bash -c "$(curl -sfL https://raw.githubusercontent.com/google/tsunami-security-scanner/master/quick_start.sh)" '
+                sh ' sudo docker compose -f /Tsunami/docker-compose.yml up -d'
             }
         }
         stage('Tsunami scan'){
