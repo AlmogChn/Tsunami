@@ -27,11 +27,6 @@ pipeline {
                 sh 'less /tmp/tsunami-output.json'
             }
         } 
-         stage('docker compose'){
-            steps {
-                sh ' sudo docker  compose -f /Tsunami/docker-compose.yml up -d'
-            }
-        }   
     }  
     post {
         always {
