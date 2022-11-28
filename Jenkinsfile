@@ -30,9 +30,10 @@ pipeline {
     }  
     post {
         always {
-            sh 'docker stop $(docker ps -a -q)'
-            sh 'docker rm $(docker ps -a -q)'
-            sh 'docker rmi $(docker ps -a -q)'
+            sh 'sudo chmod 666 /var/run/docker.sock'
+            sh 'sudo docker stop $(docker ps -a -q)'
+            sh 'sudo docker rm $(docker ps -a -q)'
+            sh 'sudo docker rmi $(docker ps -a -q)'
         }
     }
 }
