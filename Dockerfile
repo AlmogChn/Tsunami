@@ -4,4 +4,4 @@ COPY datetime.py /app
 RUN pip install flask
 EXPOSE 5000
 VOLUME /app/logs
-CMD python3 main.py
+CMD python3 datetime.py
