@@ -26,7 +26,32 @@ We have another server on which tsunami scanner is installed(aws, ec2).
      
      h. Tool Locations -> home :' /usr/bin/git' ##for work with git
      
-2. 
+     i. save
+     
+     
+     
+     
+2. **Jenkins** -> new pipeline project -> :   #build the pipeline
+
+     a. Build Triggers : ' GitHub hook trigger for GITScm polling '
+     
+     b. Pipeline - > Definition : ' pipeline script from SCM  ' 
+     
+     c. SCM : ' Git '
+     
+     d. Repository URL : ' https://github.com/AlmogChn/Tsunami.git '
+     
+     e. Branch Specifier (blank for 'any') : main
+     
+     
+     
+
+3. **Jenkins** -> choose the job that you just made -> Build Now.      #Run Tsunami scan 
+
+
+     
+     
+
  
    
 
