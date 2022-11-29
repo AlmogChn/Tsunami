@@ -73,7 +73,7 @@ We have another server on which tsunami scanner is installed(aws, ec2).
 
 4. 3.127.66.246 - aws ec2 with2 containers are already installed (from docker-compose.yml) 
 
-* You can easily add or remove servers for scanning (Jenkinsfile, "list) 
+* You can easily add or remove servers for scanning (Jenkinsfile, list) 
      ```
         stage('Create List') {
             steps {
