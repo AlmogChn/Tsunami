@@ -9,6 +9,7 @@ We have another server on which tsunami scanner is installed(aws, ec2).
 # Operating Instructions
 * Before you start running, you must contact me so that I can turn on the EC2 on which the tsunami is installed.
 1. **Jenkins** -> Manage nodes and clouds -> New node -> "linux" (name):             ## Guide to adding a Node for SSH access to AWS
+
      a. name : linux
      
      b. Remote root directory : /home/ubuntu
@@ -21,9 +22,11 @@ We have another server on which tsunami scanner is installed(aws, ec2).
      
      f. Host : *ask me Ask me directly after I turn on the server
      
-     g. Credentials -> add -> Credentials -> kind : 'ssh username with private key' , ID&Description : 'ubunto', Private Key : *past the pem file from the repo
+     g. Credentials -> add -> Credentials -> kind : 'ssh username with private key' , ID&Description : 'ubunto', Private Key : *past the content from .pem that i sent         in a separate email  
      
      h. Tool Locations -> home : /usr/bin/git ##for work with git
+     
+2. 
  
    
 
