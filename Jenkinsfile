@@ -27,16 +27,14 @@ pipeline {
                             --scan-results-local-output-filename=/tmp/tsunami-output.json " 
                               sh 'python3 shortreport.py'
                         }
-                        stage("short report ${list[i]}") {
+                        stage("Short scan report ${list[i]}") {
                             sh 'python3 shortreport.py'
+                        }
+                        stage("Full scan report ${list[i]}"){
+                            sh 'less /tmp/tsunami-output.json' 
                         }
                     }
                 }
-            }
-        }
-        stage('Full Port Scan Report'){
-            steps {
-                sh 'less /tmp/tsunami-output.json'
             }
         }
     }  
