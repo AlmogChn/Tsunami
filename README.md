@@ -3,7 +3,7 @@ Tsunami is a general purpose network security scanner with an extensible plugin
 system for detecting high severity vulnerabilities with high confidence.
 
 # The purpose of the scanner in the organization
-In our organization there are servers that we would like to know if there are any vulnerabilities them.
+In our organization there list of servers that we would like to know if there are any vulnerabilities them.
 We have another server on which tsunami scanner is installed(aws, ec2).
 
 # Operating Instructions
