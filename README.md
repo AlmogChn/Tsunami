@@ -32,11 +32,11 @@ We would like to know if there are any vulnerabilities in our organization's ser
      
      
      
-2. **Jenkins** -> new pipeline project -> :   #build the pipeline
+2. **Jenkins** -> New pipeline project -> :   #build the pipeline
 
      a. Build Triggers : ' GitHub hook trigger for GITScm polling '
      
-     b. Pipeline - > Definition : ' pipeline script from SCM  ' 
+     b. Pipeline - > Definition : ' Pipeline script from SCM  ' 
      
      c. SCM : ' Git '
      
@@ -54,7 +54,7 @@ We would like to know if there are any vulnerabilities in our organization's ser
 
 # Description of the files in the REPO
 
-1. **Jenkinsfile** - Runs the scan & Used to add / remove servers from list and run the fel
+1. **Jenkinsfile** - Runs the scan & Used to add / remove servers from list.
 
 2. **Dockerfile**, **docker-compose.yml**, **flaskdtime.py** - Used separately, and not as part of the Pipeline. Their purpose is to run a container in a separate EC2 (which we are scanning - already installed on 3.127.66.246).
 
