@@ -49,7 +49,15 @@ We have another server on which tsunami scanner is installed(aws, ec2).
 3. **Jenkins** -> choose the job that you just made -> Build Now.      #Run Tsunami scan 
 
 
-     
+
+
+# Description of the files in the REPO
+
+1. **Jenkinsfile** - can use to add / remove server from list.
+
+2. **Dockerfile**, **docker-compose.yml**, **flaskdtime.py** - They are used separately, and not as part of the Pipeline. Their purpose is to run a container in a separate EC2 (which we are scanning - already installed on 3.127.66.246).
+
+3. **shortreport.py** - Script for see a short scan report. 
      
 
  
