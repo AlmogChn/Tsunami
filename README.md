@@ -59,6 +59,20 @@ We have another server on which tsunami scanner is installed(aws, ec2).
 
 3. **shortreport.py** - Script for see a short scan report. 
      
+     
+     
+# Servers for scanning:
+
+1. 127.0.0.1 - The local server on which TSUNAMI is located.
+
+*This is the only server that will warn about vulnerabilities (because unauthenticated Jupyter Notebook is also installed on it)
+
+2. 77.125.40.74 - random ip
+
+3. 77.137.66.24 - random ip
+
+4. 3.127.66.246 - aws ec2 with2 containers are already installed (from docker-compose.yml) 
+
 
  
    
