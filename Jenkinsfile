@@ -1,5 +1,8 @@
 pipeline { 
     agent { label 'linux'}
+    options {
+    buildDiscarder(logRotator(numToKeepStr: '20', daysToKeepStr: '5'))
+    }
     stages { 
         stage('git clone'){
             steps { 
