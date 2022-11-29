@@ -28,7 +28,6 @@ pipeline {
                             --ip-v4-target=${list[i]} \
                             --scan-results-local-output-format=JSON \
                             --scan-results-local-output-filename=/tmp/tsunami-output.json " 
-                              sh 'python3 shortreport.py'
                         }
                         stage("Short scan report ${list[i]}") {
                             sh 'python3 shortreport.py'
