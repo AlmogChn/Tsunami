@@ -7,7 +7,8 @@ We would like to know if there are any vulnerabilities in our organization's ser
 
 # Operating Instructions
 * Prior to running the scanner, contact me for turning on the EC2 server where tsunami is installed on.
-* 
+
+
 1. **Jenkins** -> Manage nodes and clouds -> New node -> "linux" (name):             ## Guide to adding a Node for SSH access to AWS
 
      a. name : 'linux'
