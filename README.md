@@ -11,7 +11,7 @@ We would like to know if there are any vulnerabilities in our organization's ser
 
 1. **Jenkins** -> Manage nodes and clouds -> New node -> "linux" (name):             ## Guide to adding a Node for SSH access to AWS
 
-     a. name : 'linux'
+     a. Name : 'linux'
      
      b. Remote root directory :' /home/ubuntu '
      
@@ -27,7 +27,7 @@ We would like to know if there are any vulnerabilities in our organization's ser
      
      h. Tool Locations -> home :' /usr/bin/git' ##for work with git
      
-     i. save
+     i. Save
      
      
      
@@ -47,7 +47,7 @@ We would like to know if there are any vulnerabilities in our organization's ser
      
      
 
-3. **Jenkins** -> choose the job that you just made -> Build Now.      #Run Tsunami scan 
+3. **Jenkins** -> Choose the job that you just made -> Build Now.      #Run Tsunami scan 
 
 
 
@@ -68,11 +68,11 @@ We would like to know if there are any vulnerabilities in our organization's ser
 
 *This is the only server that will warn about vulnerabilities (because unauthenticated Jupyter Notebook is also installed on it)
 
-2. 77.125.40.74 - random ip
+2. 77.125.40.74 - Random ip
 
-3. 77.137.66.24 - random ip
+3. 77.137.66.24 - Random ip
 
-4. 3.127.66.246 - aws ec2 with2 containers are already installed (from docker-compose.yml) 
+4. 3.127.66.246 - Aws ec2 with2 containers are already installed (from docker-compose.yml) 
 
 * You can easily add or remove servers for scanning (Jenkinsfile, list) 
      ```
