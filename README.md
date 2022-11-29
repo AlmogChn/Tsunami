@@ -3,11 +3,11 @@ Tsunami is a general purpose network security scanner with an extensible plugin
 system for detecting high severity vulnerabilities with high confidence.
 
 # The purpose of the scanner in the organization
-In our organization there is a list of servers that we would like to know if there are any vulnerabilities on them.
-We have another server on which tsunami scanner is installed(aws, ec2).
+We would like to know if there are any vulnerabilities in our organization's servers which are stored in a list. We have an additional server on which the Tsunami scanner is installed(aws, ec2).
 
 # Operating Instructions
-* Before you start running, you must contact me so that I can turn on the EC2 on which the tsunami is installed.
+* Prior to running the scanner, contact me for turning on the EC2 server where tsunami is installed on.
+* 
 1. **Jenkins** -> Manage nodes and clouds -> New node -> "linux" (name):             ## Guide to adding a Node for SSH access to AWS
 
      a. name : 'linux'
@@ -22,7 +22,7 @@ We have another server on which tsunami scanner is installed(aws, ec2).
      
      f. Host :  *Ask me directly after I turn on the server
      
-     g. Credentials -> add -> Credentials -> kind : 'ssh username with private key' , ID&Description : 'ubunto', Private Key : *past the content from .pem that i sent         in a separate email  
+     g. Credentials -> add -> Credentials -> kind : 'ssh username with private key' , ID&Description : 'ubunto', Private Key : *paste the content from .pem that i sent         in a separate email  
      
      h. Tool Locations -> home :' /usr/bin/git' ##for work with git
      
@@ -53,11 +53,11 @@ We have another server on which tsunami scanner is installed(aws, ec2).
 
 # Description of the files in the REPO
 
-1. **Jenkinsfile** - can use to add / remove server from list.
+1. **Jenkinsfile** - Runs the scan & Used to add / remove servers from list and run the fel
 
-2. **Dockerfile**, **docker-compose.yml**, **flaskdtime.py** - They are used separately, and not as part of the Pipeline. Their purpose is to run a container in a separate EC2 (which we are scanning - already installed on 3.127.66.246).
+2. **Dockerfile**, **docker-compose.yml**, **flaskdtime.py** - Used separately, and not as part of the Pipeline. Their purpose is to run a container in a separate EC2 (which we are scanning - already installed on 3.127.66.246).
 
-3. **shortreport.py** - Script to see a short scan report. 
+3. **shortreport.py** - Script for printing a short scan report.
      
      
      
