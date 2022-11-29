@@ -3,7 +3,7 @@ Tsunami is a general purpose network security scanner with an extensible plugin
 system for detecting high severity vulnerabilities with high confidence.
 
 # The purpose of the scanner in the organization
-In our organization there list of servers that we would like to know if there are any vulnerabilities on them.
+In our organization there is a list of servers that we would like to know if there are any vulnerabilities on them.
 We have another server on which tsunami scanner is installed(aws, ec2).
 
 # Operating Instructions
@@ -20,7 +20,7 @@ We have another server on which tsunami scanner is installed(aws, ec2).
      
      e. Launch method : 'launch agents via ssh'
      
-     f. Host :  *ask me Ask me directly after I turn on the server
+     f. Host :  *Ask me directly after I turn on the server
      
      g. Credentials -> add -> Credentials -> kind : 'ssh username with private key' , ID&Description : 'ubunto', Private Key : *past the content from .pem that i sent         in a separate email  
      
@@ -57,7 +57,7 @@ We have another server on which tsunami scanner is installed(aws, ec2).
 
 2. **Dockerfile**, **docker-compose.yml**, **flaskdtime.py** - They are used separately, and not as part of the Pipeline. Their purpose is to run a container in a separate EC2 (which we are scanning - already installed on 3.127.66.246).
 
-3. **shortreport.py** - Script for see a short scan report. 
+3. **shortreport.py** - Script to see a short scan report. 
      
      
      
