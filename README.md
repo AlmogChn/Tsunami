@@ -9,7 +9,7 @@ We would like to know if there are any vulnerabilities in our organization's ser
 * Prior to running the scanner, contact me for turning on the EC2 server where tsunami is installed on.
 
 
-1. **Jenkins** -> Manage nodes and clouds -> New node -> "linux" (name):             ## Guide to adding a Node for SSH access to AWS
+1. **Jenkins** -> Manage nodes and clouds -> New node -> "linux" (name):             #### Guide to adding a Node for SSH access to AWS
 
      a. Name : 'linux'
      
@@ -32,7 +32,7 @@ We would like to know if there are any vulnerabilities in our organization's ser
      
      
      
-2. **Jenkins** -> New pipeline project -> :   #build the pipeline
+2. **Jenkins** -> New pipeline project -> :   #### Build the pipeline
 
      a. Build Triggers : ' GitHub hook trigger for GITScm polling '
      
@@ -47,7 +47,7 @@ We would like to know if there are any vulnerabilities in our organization's ser
      
      
 
-3. **Jenkins** -> Choose the job that you just made -> Build Now.      #Run Tsunami scan 
+3. **Jenkins** -> Choose the job that you just made -> Build Now.     ####Run Tsunami scan 
 
 
 
