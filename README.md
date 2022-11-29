@@ -19,9 +19,9 @@ We have another server on which tsunami scanner is installed(aws, ec2).
      
      e. Launch method : launch agents via ssh
      
-     f. Host : <ask me Ask me directly after I turn on the server>
+     f. Host : <<ask me Ask me directly after I turn on the server>>
      
-     g. Credentials -> add -> Credentials -> kind : 'ssh username with private key' , ID&Description : 'ubunto', Private Key : <past the pem file from the repo>
+     g. Credentials -> add -> Credentials -> kind : 'ssh username with private key' , ID&Description : 'ubunto', Private Key : <<past the pem file from the repo>>
      
      h. Tool Locations -> home : /usr/bin/git ##for work with git
  
